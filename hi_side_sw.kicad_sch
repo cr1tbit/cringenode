@@ -660,13 +660,13 @@
     (property "Datasheet" "~" (at 108.585 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 108.585 73.66 0)
+    (property "LCSC" "C25756" (at 108.585 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 243d0553-86e7-4729-9f52-c54e9ee8212a))
     (pin "2" (uuid 3d0b73ec-9d2a-46b0-9312-70dc206d9fc4))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "R44") (unit 1)
         )
@@ -695,11 +695,14 @@
     (property "Datasheet" "" (at 133.985 80.01 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
+    (property "LCSC" "C105166" (at 133.985 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 9ec22bdd-3edf-4bf7-b72b-b8d3b94a23a8))
     (pin "2" (uuid f9439b43-82c1-4961-ad57-02c68967d686))
     (pin "3" (uuid 297d4bee-58e2-4a11-9efa-a7d636b6b0ac))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "Q17") (unit 1)
         )
@@ -728,13 +731,13 @@
     (property "Datasheet" "~" (at 95.885 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 95.885 85.09 0)
+    (property "LCSC" "C25744" (at 95.885 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5510b195-3b8d-467a-9337-07266aec1d2e))
     (pin "2" (uuid 98de6d15-2530-4b74-9013-338e4fd4f8eb))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "R45") (unit 1)
         )
@@ -763,11 +766,14 @@
     (property "Datasheet" "~" (at 117.475 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C2149" (at 117.475 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 96725604-34f1-4bfb-b7be-1cbc8679d09b))
     (pin "2" (uuid 97df3d35-d879-4cef-a8d4-4f8b65ef5fa1))
     (pin "3" (uuid c6ba3841-5fce-4a8f-8c49-75d8fc829bf1))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "Q18") (unit 1)
         )
@@ -796,13 +802,13 @@
     (property "Datasheet" "~" (at 108.585 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 108.585 99.06 0)
+    (property "LCSC" "C11702" (at 108.585 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3b25d528-05b4-4bb5-b458-8d6b326f8f13))
     (pin "2" (uuid 51d17b43-63a1-4ab9-af12-2b0d955f8348))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "R48") (unit 1)
         )
@@ -831,10 +837,13 @@
     (property "Datasheet" "~" (at 136.525 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC" "C17888" (at 136.525 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3563937d-816a-489d-8461-8d9028343c95))
     (pin "2" (uuid 66ce87aa-7f25-4cbf-8a03-2b236cc1dabd))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "R46") (unit 1)
         )
@@ -870,7 +879,7 @@
     (pin "2" (uuid 3d27c6cd-d0b3-4e8a-9d18-82f18f9238a7))
     (pin "3" (uuid c03668d8-d16b-42f4-8c22-e5081acdb2d0))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "Q19") (unit 1)
         )
@@ -899,13 +908,13 @@
     (property "Datasheet" "~" (at 95.885 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 95.885 97.79 0)
+    (property "LCSC" "C25744" (at 95.885 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid cc8cb83c-66a3-4a0c-92eb-544148da978b))
     (pin "2" (uuid f0df1789-44b3-4653-9b1c-47ff9697c84e))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "R47") (unit 1)
         )
@@ -940,7 +949,7 @@
     (pin "1" (uuid 74cbad58-070c-42cd-bd14-925841b84836))
     (pin "2" (uuid 19aa95de-b27d-4867-9bcb-7845ff703380))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "C23") (unit 1)
         )
@@ -976,7 +985,7 @@
     (pin "2" (uuid 41288838-0b7e-4ce9-a3aa-d0b3cb75f9cf))
     (pin "3" (uuid 6527713c-18ae-4b49-a370-dd75e3354fe4))
     (instances
-      (project "cringenode"
+      (project "MOSNode"
         (path "/030e8303-6e45-42d5-8b9a-859414965308/e4a0c18b-f3f3-4251-8bd0-728351d793cd"
           (reference "Q16") (unit 1)
         )
