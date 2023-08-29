@@ -28,3 +28,5 @@ fp-info-cache
 *.STEP
 *.log
 *.db
+
+*.lck
