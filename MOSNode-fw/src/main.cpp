@@ -19,7 +19,8 @@ void uartHandle(const char* str){
   Serial.println(str);
 }
 
-AdvancedOledLogger aOledLogger = AdvancedOledLogger(i2c, LOG_INFO, OLED_128x32);
+AdvancedOledLogger aOledLogger = 
+  AdvancedOledLogger(i2c, LOG_INFO, OLED_128x32, OLED_UPSIDE_DOWN);
 SerialLogger serialLogger = SerialLogger(uartHandle, LOG_DEBUG);
 Button2 userButton = Button2();
 
@@ -31,7 +32,7 @@ void setup() {
   // bootloopOnButtonPress(PIN_B2);
   i2c.begin(IO6_SDA, IO5_SCL);
       
-  // AlfaLogger.addBackend(&aOledLogger);
+  AlfaLogger.addBackend(&aOledLogger);
   AlfaLogger.addBackend(&serialLogger);
   AlfaLogger.begin();
   ALOGI("display started");
@@ -55,7 +56,6 @@ void loop() {
 
     static int counter = 0;
     if (counter++ % 8 == 0){
-      ALOGI("dupa");
-      // aOledLogger.redraw();
+      aOledLogger.redraw();
     }
 }
