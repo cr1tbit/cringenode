@@ -16,3 +16,7 @@
 #define IO9_BUT1 9
 #define IO10 10
 
+#define SHUNT_IN_RES_MR 25
+#define SHUNT_1_RES_MR 25
+#define SHUNT_2_RES_MR 25
+
