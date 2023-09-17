@@ -2,6 +2,7 @@
 #include <Wire.h>
 
 #include <Button2.h>
+#include <INA3221.h>
 
 #include <alfalog.h>
 #include "advancedOledLogger.h"
@@ -23,6 +24,27 @@ AdvancedOledLogger aOledLogger =
   AdvancedOledLogger(i2c, LOG_INFO, OLED_128x32, OLED_UPSIDE_DOWN);
 SerialLogger serialLogger = SerialLogger(uartHandle, LOG_DEBUG);
 Button2 userButton = Button2();
+INA3221 ina_0(INA3221_ADDR40_GND);
+
+void current_measure_init() {
+    ina_0.begin(&i2c);
+    ina_0.reset();
+    ina_0.setShuntRes(10, 10, 10);
+}
+
+void enablePowerOutputs(){
+  pinMode(IO7_GATEIN, OUTPUT);
+  digitalWrite(IO7_GATEIN, HIGH);
+
+  pinMode(IO0, OUTPUT);
+  digitalWrite(IO0, HIGH);
+
+  pinMode(IO1, OUTPUT);
+  digitalWrite(IO1, HIGH);
+
+  pinMode(IO2, OUTPUT);
+  digitalWrite(IO2, HIGH);
+}
 
 void setup() {
   Serial.begin(115200);
@@ -47,6 +69,8 @@ void setup() {
   );
 
   aOledLogger.setTopBarText(BAR_WIFI_IP, "MOSNode r. " FW_REV);
+
+  enablePowerOutputs();
 }
 
 void loop() {
@@ -57,5 +81,11 @@ void loop() {
     static int counter = 0;
     if (counter++ % 8 == 0){
       aOledLogger.redraw();
+      ALOGV("dupa");
+      ALOGV("current: {}", ina_0.getCurrent(INA3221_CH1) * 1000);
+      // Serial.printf(
+      //   "A1%3.0fma %1.1fV A2%3.0fma %1.1fV\r\n",
+      //   ina_0.getCurrent(INA3221_CH1) * 1000, ina_0.getVoltage(INA3221_CH1),
+      //   ina_0.getCurrent(INA3221_CH2) * 1000, ina_0.getVoltage(INA3221_CH2));
     }
 }
