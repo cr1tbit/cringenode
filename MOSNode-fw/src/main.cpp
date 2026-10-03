@@ -45,7 +45,7 @@ void setup() {
 
   userButton.begin(IO9_BUT1, INPUT_PULLUP, false);
   userButton.setTapHandler([](Button2 & b){
-      ALOGI("button tapped");    
+      ALOGI("button tapped");
     }
   );
 
